@@ -30,6 +30,8 @@ $(document).ready(function(){
     } else if (tempRollResult ===1){
       turnScore = [0];
       $("span#turnScore").text(turnScore);
+      $("span.playerOneArea").hide();
+      $("span.playerTwoArea").show();
     }
   });
 
@@ -37,10 +39,15 @@ $(document).ready(function(){
     event.preventDefault();
     var addScores = parseInt(turnScore[0].toString()) + parseInt(playerOneScore[0].toString());
     playerOneScore.unshift(addScores);
-    $("div#playerOneScore").text(playerOneScore[0]);
+    $("span#playerOneScore").text("");
+    $("span#playerOneScore").text(playerOneScore[0]);
+    if (addScores >= 100) {
+      alert("YOU'RE THE BIG WINNER");
+    } else {
     turnScore = [0];
     $("span.playerOneArea").hide();
     $("span.playerTwoArea").show();
+    };
   });
 
   $("#rollButtonTwo").click(function(event){
@@ -55,17 +62,24 @@ $(document).ready(function(){
     } else if (tempRollResult ===1){
       turnScore = [0];
       $("span#turnScore").text(turnScore);
+      $("span.playerTwoArea").hide();
+      $("span.playerOneArea").show();
     }
   });
 
   $("#passButtonTwo").click(function(event){
     event.preventDefault()
-    var addScores = parseInt(turnScore[0].toString()) + parseInt(playerTwoScore.toString());
-    playerTwoScore.push(addScores);
-    $("#playerTwoScore").text(playerTwoScore);
-    $("span.playerTwoArea").hide();
+    var addScores = parseInt(turnScore[0].toString()) + parseInt(playerTwoScore[0].toString());
+    playerTwoScore.unshift(addScores);
+    $("span#playerTwoScore").text("");
+    $("span#playerTwoScore").text(playerTwoScore[0]);
+    if (addScores >= 100) {
+      alert("YOU'RE THE BIG WINNER");
+    } else {
     turnScore = [0];
+    $("span.playerTwoArea").hide();
     $("span.playerOneArea").show();
+    }
   });
 
 });
