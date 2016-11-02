@@ -14,36 +14,39 @@
       </div>
       <div class="row">
         <div class="col-md-6" id="player-one">
-          <h2>Player 1:</h2>
-          <p>Your current score is: <span id="playerOneScore"></span></p>
+          <div class="well" id="pOneWell">
+            <h2>Player 1</h2>
+          </div>
+          <p class="displayText">Your current score is: <span id="playerOneScore"></span></p>
+          <div class="row">
+              <div class="col-md-6" id="rollButtonOne">
+                  <span class="playerOneArea"><button type="button" class="btn pull-right">Roll</button></span>
+              </div>
+              <div class="col-md-6" id="passButtonOne">
+                  <span class="playerOneArea"><button type="submit" class="btn pull-left">Pass</button></span>
+              </div>
+          </div>
         </div>
+
         <div class="col-md-6" id="player-two">
-          <h2>Player 2:</h2>
-          <p>Your current score is: <span id="playerTwoScore"></span></p>
+          <div class="well" id="pTwoWell">
+            <h2>Player 2</h2>
+          </div>
+          <p class="displayText">Your current score is: <span id="playerTwoScore"></span></p>
+          <div class="row">
+            <div class="col-md-6" id="rollButtonTwo">
+              <span class="playerTwoArea"><button type="button" class="btn pull-right">Roll</button></span>
+            </div>
+            <div class="col-md-6" id="passButtonTwo">
+              <span class="playerTwoArea"><button type="submit" class="btn pull-left">Pass</button></span>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-        <p> <span id="diceDisplay"></span> + <span id="turnScore"></span></p>
-        </div>
-      </div>
-      <div class="row">
-        <div id="playerOneArea">
-          <div class="col-md-3" id="rollButtonOne">
-              <span class="playerOneArea"><button type="button" class="btn">Roll</button></span>
-          </div>
-          <div class="col-md-3" id="passButtonOne">
-              <span class="playerOneArea"><button type="submit" class="btn">Pass</button></span>
-          </div>
-        </div>
-        <div>
-          <div class="col-md-3" id="rollButtonTwo">
-            <span class="playerTwoArea"><button type="button" class="btn">Roll</button></span>
-          </div>
-          <div class="col-md-3" id="passButtonTwo">
-            <span class="playerTwoArea"><button type="submit" class="btn">Pass</button></span>
-          </div>
-        </div>
+      <div class="display">
+        <p>Current score: <span id="turnScore"></span></p>
+        <br>
+        <span id="diceDisplay"><img src="img/one.png" class="resize" alt="onedie" id="diceOne"/><img src="img/two.png" class="resize" alt="twodie" id="diceTwo"/><img src="img/three.png" class="resize" alt="threedie" id="diceThree"/><img src="img/four.png" class="resize" alt="fourdie" id="diceFour"/><img src="img/five.png" class="resize" alt="fivedie" id="diceFive"/><img src="img/six.png" class="resize" alt="sixdie" id="diceSix"/></span>
       </div>
     </div>
   </body>

@@ -22,7 +22,50 @@ $(document).ready(function(){
     event.preventDefault()
 
     var tempRollResult = rollTheDice()
-    $("span#diceDisplay").text(tempRollResult);
+
+    if (tempRollResult === 1){
+      $("#diceOne").show();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 2){
+      $("#diceOne").hide();
+      $("#diceTwo").show();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 3){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").show();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 4){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").show();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 5){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").show();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 6){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").show();
+    };
     if (tempRollResult !== 1){
       var addRollValue = parseInt(turnScore[0].toString()) + tempRollResult;
       turnScore.unshift(addRollValue)
@@ -54,7 +97,49 @@ $(document).ready(function(){
     event.preventDefault()
 
     var tempRollResult = rollTheDice()
-    $("span#diceDisplay").text(tempRollResult);
+    if (tempRollResult === 1){
+      $("#diceOne").show();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 2){
+      $("#diceOne").hide();
+      $("#diceTwo").show();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 3){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").show();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 4){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").show();
+      $("#diceFive").hide();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 5){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").show();
+      $("#diceSix").hide();
+    } else if (tempRollResult === 6){
+      $("#diceOne").hide();
+      $("#diceTwo").hide();
+      $("#diceThree").hide();
+      $("#diceFour").hide();
+      $("#diceFive").hide();
+      $("#diceSix").show();
+    };
     if (tempRollResult !== 1){
       var addRollValue = parseInt(turnScore[0].toString()) + tempRollResult;
       turnScore.unshift(addRollValue)

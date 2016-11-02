@@ -1,3 +1,80 @@
 .playerTwoArea {
   display: none;
 }
+
+.jumbotron {
+  text-align: center;
+}
+
+#player-one {
+  background-color: pink;
+  padding-bottom: 40px;
+  text-align: center;
+  height: 300px;
+}
+
+#player-two {
+  background-color: lightblue;
+  padding-bottom: 40px;
+  text-align: center;
+  height: 300px;
+}
+
+.displayText {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.display {
+  text-align: center;
+  padding: 50px;
+  /*padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;*/
+  font-size: 20pt;
+  border-style: solid;
+  border-color: black;
+  margin-right: 30%;
+  margin-left: 30%;
+}
+
+#pOneWell {
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+#pTwoWell {
+  background-color: white;
+  margin-top: 30px;
+  margin-left: 30%;
+  margin-right: 30%;
+  text-align: center;
+}
+
+.resize {
+  width: 60px;
+  height: 60px;
+}
+
+#diceOne {
+  display: none;
+}
+#diceTwo {
+  display: none;
+}
+#diceThree {
+  display: none;
+}
+#diceFour {
+  display: none;
+}
+#diceFive {
+  display: none;
+}
+#diceSix {
+  display: none;
+}
