@@ -12,8 +12,21 @@
       <div class="jumbotron">
         <h1>Pig Dice!</h1>
       </div>
+      <div class="well">
+        <p id="intro">The rules of the game are simple:</p>
+        <ul id="centerList">
+          <li>Roll the dice</li>
+          <li>Each time you roll, your accumulate points</li>
+          <li>If you pass then the points are added to your score</li>
+          <li>If you roll a "1" then your running total will be lost and you lose your turn</li>
+          <li>First to 100 wins the game!</li>
+        </ul>
+      </div>
+      <img src="img/pigTop.jpg" alt="pigFace" id="centerImage"/>
       <div class="row">
-        <div class="col-md-6" id="player-one">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4" id="player-one">
           <div class="well" id="pOneWell">
             <h2>Player 1</h2>
           </div>
@@ -27,8 +40,7 @@
               </div>
           </div>
         </div>
-
-        <div class="col-md-6" id="player-two">
+        <div class="col-md-4" id="player-two">
           <div class="well" id="pTwoWell">
             <h2>Player 2</h2>
           </div>
@@ -42,8 +54,10 @@
             </div>
           </div>
         </div>
+        <div class="col-md-2">
+        </div>
       </div>
-      <div class="display">
+      <div class="well display">
         <p>Current score: <span id="turnScore"></span></p>
         <br>
         <span id="diceDisplay"><img src="img/one.png" class="resize" alt="onedie" id="diceOne"/><img src="img/two.png" class="resize" alt="twodie" id="diceTwo"/><img src="img/three.png" class="resize" alt="threedie" id="diceThree"/><img src="img/four.png" class="resize" alt="fourdie" id="diceFour"/><img src="img/five.png" class="resize" alt="fivedie" id="diceFive"/><img src="img/six.png" class="resize" alt="sixdie" id="diceSix"/></span>
