@@ -7,16 +7,6 @@ var playerOneScore = [0]
 var playerTwoScore = [0]
 var turnScore = [0]
 
-// function PlayerOne(score) {
-//   this.scoreone = score;
-//
-// }
-//
-// function PlayerTwo(score){
-//   this.scoretwo = score;
-// }
-
-
 $(document).ready(function(){
   $("#rollButtonOne").click(function(event){
     event.preventDefault()
